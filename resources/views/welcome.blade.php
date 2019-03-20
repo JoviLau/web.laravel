@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel - By Jovi
+                    Weibo Laravel - By Jovi
                 </div>
 
                 <div class="links">
