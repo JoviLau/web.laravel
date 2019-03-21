@@ -39,6 +39,15 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($user) {
+            $user->activation_token = str_random(30);
+        });
+    }
+
     public function gravatar($size = '80')
     {
         $hash = md5(strtolower(trim($this->attributes['email'])));
