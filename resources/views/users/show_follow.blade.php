@@ -13,7 +13,6 @@
                         {{ $user->name }}
                     </a>
                 </div>
-
             @endforeach
         </div>
 
